@@ -45,9 +45,9 @@ header nav ul {
 }
 
 header nav ul li a {
-  margin: 0 30px;
-  font-weight: lighter;
-  font-size: 1.55vw;
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.55vw;
 }
 
 /* HEADER / NAVBAR STYLES END */
@@ -87,21 +87,23 @@ section {
 
 /* HERO STYLES START */
 .hero {
-  background-image: url('../images/hero-bg.jpg');
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    background-image: url("../images/hero-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
 
 .hero-cta {
-  width: 35%;
-  text-align: right;
-  margin: 3.5%;
-  color: #fff;
-  font-size: 18px;
-  line-height: 1.3;
+    width: 35%;
+    text-align: right;
+    margin: 3.5%;
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.3;
+    line-height: 1.2;
 }
 
 .hero-cta h2 {
@@ -153,13 +155,13 @@ section {
 
 /* SECTION TITLE STYLES START */
 .section-title {
-  font-size: 55px;
-  border-bottom: 3px solid;
-  color: #024e76;
-  padding-bottom: 20px;
-  text-align: center;
-  margin: 0 auto 35px auto;
-  width: 50%;
+    font-size: 48px;
+    color: #024e76;
+    border-bottom: 3px solid;
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
 }
 
 .primary-border {
@@ -190,172 +192,285 @@ section {
 }
 
 .step {
-  margin: 50px auto;
-  padding-bottom: 50px;
-  width: 80%;
-  border-bottom: 1px solid #39a6b2;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
+    margin: 50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
 
-.step h3 {
-  color: #024e76;
-  font-size: 46px;
-  flex: 1 30%;
-}
+  .steps {
+      background: #fce138;
+  }
 
-.step-info {
-  flex: 2 70%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
+  .step h3 {
+      color: #024e76;
+      font-size: 46px;
+      margin-top: 10px;
+      flex: 1 30%;
+  }
 
-.step-img {
-  flex: 1 12%;
-  margin-right: 20px;
-}
+  .step-text {
+      flex: 12;
+  }
 
-.step-img img {
-  max-width: 100%;
-}
+  .step-text p {
+      color: #39a6b2;
+      font-size: 18px;
+  }
 
-.step-text {
-  flex: 12;
-}
+  .step-text h4 {
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+  }
 
-.step-text p {
-  color: #39a6b2;
-  font-size: 18px;
-}
+  .step-info {
+    flex: 2 70%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
 
-.step-text h4 {
-  font-size: 26px;
-  line-height: 1.5;
-  color: #024e76;
-}
+  .step-img {
+      flex: 1 12%;
+      margin-right: 20px;
+  }
 
-/* WHAT YOU DO STYLES END */
+  .step-img img {
+      max-width: 100%;
+  }
 
-/* MEET THE TRAINERS START */
-.trainers {
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
+  /* what you do end */
 
-.trainer {
-  margin: 20px;
-  flex: 1;
-  background: #024e76;
-  color: #fce138;
-}
+  .trainers {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-.trainer img {
-  width: 100%;
-}
+  .trainer {
+      margin: 20px;
+      background: #024e76;
+      color: #fce138;
+      flex: 1;
+  }
 
-.trainer-bio {
-  padding: 25px;
-  line-height: 1.3;
-}
+  .trainer img {
+    width: 100%;
+  }
+  
+  .trainer-bio {
+    padding: 25px;
+  }
 
-.trainer-bio h3 {
-  font-size: 28px;
-}
+  .text-left {
+      text-align: left;
+  }
 
-.trainer-bio h4 {
-  font-weight: lighter;
-  font-size: 22px;
-  margin-bottom: 15px;
-}
+  .text-right {
+      text-align: right;
+  }
 
-.trainer-bio p {
-  font-size: 17px;
-}
-/* TRAINER STYLES END */
+  .trainer-bio h3 {
+    font-size: 28px;
+  }
+  
+  .trainer-bio h4 {
+    font-weight: lighter;
+    font-size: 22px;
+    margin-bottom: 15px;
+  }
+  
+  .trainer-bio p {
+    font-size: 17px;
+  }
 
-/* REACH OUT STYLES START */
-.contact {
-  background: #024e76;
-}
+  .contact {
 
-.contact h2 {
-  color: #fce138;
-}
+    background: #024e76;
+  }
 
-.contact-info {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
+  .contact h2 {
+    color: #fce138;
+  }
 
-.contact-info > * {
-  flex: 1;
-  margin: 15px;
-}
+  .contact-info {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+  }
 
-.contact-info iframe {
-  height: 400px;
-}
+  .contact-info > * {
+      flex: 1;
+      margin: 15px;
+  }
 
-.contact-info div {
-  color: white;
-}
+  .contact-info iframe {
+    height: 400px;
+  }
 
-.contact-info h3 {
-  color: #fce138;
-  font-size: 32px;
-}
+  .contact-info div {
+      color: white;
+  }
 
-.contact-info p, .contact-info address {
-  margin: 20px 0;
-  line-height: 1.5;
-  font-size: 16px;
-  font-style: normal;
-}
+  .contact-info h3 {
+    color: #fce138;
+    font-size: 32px;
+  }
+  
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  .contact-form input, .contact-form textarea {
+      border: 1px solid #024e76;
+      display: block;
+      padding: 7px 15px;
+      font-size: 16px;
+      color: #024e76;
+      width: 100%;
+      margin-bottom: 15px;
+      margin-top: 5px;
+  }
 
-.contact-form input, .contact-form textarea {
-  border: 1px solid #024e76;
-  display: block;
-  padding: 7px 15px;
-  font-size: 16px;
-  color: #024e76;
-  width: 100%;
-  margin-bottom: 15px;
-  margin-top: 5px;
-}
+  .contact-form button {
+      width: 100%;
+      border: none;
+      background: #fce138;
+      color: #024e76;
+      text-align: center;
+      padding: 15px 0;
+      font-size: 16;
+  }
 
-.contact-form button {
-  width: 100%;
-  border: none;
-  background: #fce138;
-  color: #024e76;
-  text-align: center;
-  padding: 15px 0;
-  font-size: 16px;
-}
+  .contact-info a {
+    color: #fce138;
+  }
 
-.contact-info a {
-  color: #fce138;
-}
+  .contact-info.address {
+      color: #fce138;
+  }
+  
+  /* REACH OUT STYLES END */
 
+  .flex-row {
+      display: flex;
+  }
 
-/* REACH OUT STYLES END */
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+        padding-bottom: 0;
+        justify-content: center;
+      }
+    
+      header h1 {
+        width: 100%;
+        text-align: center;
+      }
+    
+      header nav ul {
+        margin-top: 20px;
+        width: 100%;
+        justify-content: center;
+      }
+    
+      header nav ul li a {
+        font-size: 20px;
+      }
+    
+      footer h2, footer div {
+        text-align: center;
+        width: 100%;
+      }
 
-/* UTILITIES */
-.text-left {
-  text-align: left;
-}
+      .hero-cta, .hero-form {
+        width: 100%;
+      }
+      
+      .hero-cta {
+        text-align: center;
+      }
 
-.text-right {
-  text-align: right;
-}
+      .section-title {
+        width: 80%;
+      }
+      
+      .trainer {
+        flex: 0 70%;
+      }
+      
+      .contact-info iframe{
+        flex: 1 100%;
+      }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+        padding: 30px 15px;
+      }
+    
+      .step h3 {
+        flex: 1 100%;
+        text-align: center;
+      }
+    
+      .step-info {
+        flex: 2 100%;
+        text-align: center;
+        justify-content: center;
+      }
+    
+      .step-img {
+        flex: 0 32%;
+        margin-right: 0;
+        margin-top: 15px;
+        margin-bottom: 15px;
+      }
+    
+      .step-text {
+        flex: 100%;  
+      }
+    
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .hero-form button {
+        width: 100%;
+      }
+    
+      .section-title {
+        width: 95%;
+      }
+    
+      .intro p {
+        width: 100%;
+      }
+    
+      .trainer {
+        flex: 0 100%;
+      }
+    
+      .contact-info {
+        text-align: center;
+      }
+    
+      .contact-info > * {
+        flex: 0 100%;
+      }
 
-.flex-row {
-  display: flex;
-}
+      .contact-form {
+        order: 3;
+      }
+  }
